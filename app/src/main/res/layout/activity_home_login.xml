@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_welcome"
+    tools:context=".app.profile.modules.home.HomeView">
+
+    <LinearLayout
+        android:id="@+id/welcome_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_5_0"
+            android:layout_marginTop="@dimen/dp_3_0"
+            android:src="@drawable/ic_ford_logo" />
+
+        <Button
+            android:id="@+id/btn_log_in"
+            style="@style/AppTheme.Button"
+            android:background="@drawable/action_button"
+            android:text="@string/btn_log_In"
+            android:textColor="@color/primaryColor"
+            android:theme="@style/AppTheme.Button" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            style="@style/AppTheme.Button"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/app_cancel_button"
+            android:text="@string/btn_sign_Up"
+            android:textColor="@color/baseTextColor"
+            android:theme="@style/AppTheme.Button" />
+
+        <TextView
+            style="@style/LinkStyleGrey"
+            android:layout_marginTop="@dimen/dp_2_0"
+            android:text="@string/or_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_3_0"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_fb"
+                android:layout_width="@dimen/dp_7_5"
+                android:layout_height="@dimen/dp_7_5"
+                android:layout_marginRight="@dimen/dp_2_0"
+                android:src="@drawable/ic_facebook" />
+
+            <ImageView
+                android:id="@+id/btn_google"
+                android:layout_width="@dimen/dp_7_5"
+                android:layout_height="@dimen/dp_7_5"
+                android:layout_marginLeft="@dimen/dp_2_0"
+                android:src="@drawable/ic_google_plus_logo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/guest_link"
+            style="@style/LinkStyleWhite"
+            android:layout_marginTop="@dimen/dp_3_0"
+            android:text="@string/btn_continue_guest_text" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

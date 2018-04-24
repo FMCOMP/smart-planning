@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_1_6"
+        tools:layout_editor_absoluteY="6dp">
+
+        <ImageView
+            android:id="@+id/time_clock"
+            android:layout_width="@dimen/app_icon_size"
+            android:layout_height="@dimen/app_icon_size"
+            android:layout_marginStart="@dimen/dp_1_6"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_access_time" />
+
+        <TextView
+            android:id="@+id/time_display_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/time_clock"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="72dp"
+            android:layout_toRightOf="@+id/time_clock"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/timeDisplayText"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"
+            android:contextClickable="true"
+            android:elevation="24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:imeOptions="actionGo"
+            android:lineSpacingExtra="14sp"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

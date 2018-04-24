@@ -1,0 +1,132 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">150dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dp_0_1">1dp</dimen>
+    <dimen name="dp_0_3">3dp</dimen>
+    <dimen name="dp_0_5">5dp</dimen>
+    <dimen name="dp_0_6">6dp</dimen>
+    <dimen name="dp_0_7">7dp</dimen>
+    <dimen name="dp_0_8">8dp</dimen>
+    <dimen name="dp_1_0">10dp</dimen>
+    <dimen name="dp_1_2">12dp</dimen>
+    <dimen name="dp_1_5">15dp</dimen>
+    <dimen name="dp_1_6">16dp</dimen>
+    <dimen name="dp_1_8">18dp</dimen>
+    <dimen name="dp_2_0">20dp</dimen>
+    <dimen name="dp_2_5">25dp</dimen>
+    <dimen name="dp_2_7">27dp</dimen>
+    <dimen name="dp_3_0">30dp</dimen>
+    <dimen name="dp_3_6">36dp</dimen>
+    <dimen name="dp_4_0">40dp</dimen>
+    <dimen name="dp_4_5">45dp</dimen>
+    <dimen name="dp_5_0">50dp</dimen>
+    <dimen name="dp_6_0">60dp</dimen>
+    <dimen name="dp_6_5">65dp</dimen>
+    <dimen name="dp_7_5">75dp</dimen>
+    <dimen name="dp_10_0">100dp</dimen>
+
+    <!-- font Sizing -->
+    <dimen name="sp_0_8">8sp</dimen>
+    <dimen name="sp_0_9">9sp</dimen>
+    <dimen name="sp_1_0">10sp</dimen>
+    <dimen name="sp_1_1">11sp</dimen>
+    <dimen name="sp_1_2">12sp</dimen>
+    <dimen name="sp_1_3">13sp</dimen>
+    <dimen name="sp_1_4">14sp</dimen>
+    <dimen name="sp_1_5">15sp</dimen>
+    <dimen name="sp_1_6">16sp</dimen>
+    <dimen name="sp_1_7">17sp</dimen>
+    <dimen name="sp_1_8">18sp</dimen>
+    <dimen name="sp_2_0">20sp</dimen>
+    <dimen name="sp_2_4">24sp</dimen>
+    <dimen name="sp_2_7">27sp</dimen>
+
+
+
+    <!-- Navigation Sizing -->
+    <dimen name="nav_header_user_name">16dp</dimen>
+    <dimen name="nav_title_main_padding">16dp</dimen>
+    <dimen name="nav_title_sub_padding">16dp</dimen>
+
+    <!-- Margins around the outside of a Card -->
+    <dimen name="card_horizontal_margin">4dp</dimen>
+    <dimen name="card_vertical_margin">2dp</dimen>
+    <dimen name="card_vertical_margin_top">4dp</dimen>
+
+    <!-- Other card dimensions -->
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">0dp</dimen>
+
+    <!-- Margins around the inside of a Card -->
+    <dimen name="card_inner_horizontal_padding">12dp</dimen>
+    <dimen name="card_inner_vertical_padding">8dp</dimen>
+
+    <!-- Margins for a list of cars -->
+    <dimen name="cardslist_vertical_padding">8dp</dimen>
+    <dimen name="cardslist_horizontal_padding">4dp</dimen>
+
+    <!-- Framework -->
+    <dimen name="app_bar_height">150dp</dimen>
+    <dimen name="title_cell_height">54dp</dimen>
+    <dimen name="title_cell_icon_size">20dp</dimen>
+    <dimen name="cell_chevron_size">24dp</dimen>
+    <dimen name="cell_vertical_padding">18dp</dimen>
+    <dimen name="button_cell_height">60dp</dimen>
+
+    <!-- Trip Summary Fragment -->
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+
+
+    <!-- App Components version 2 need to be cleaned -->
+
+
+    <dimen name="edit_field_height">56dp</dimen>
+    <dimen name="button_padding">06dp</dimen>
+
+    <!-- AppBar Sizing -->
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!-- Text Sizing -->
+    <dimen name="body_text">14sp</dimen>
+    <dimen name="title_text">20sp</dimen>
+    <dimen name="button_text">14sp</dimen>
+    <dimen name="caption_text">12sp</dimen>
+    <dimen name="headline_text">24sp</dimen>
+    <dimen name="display_2_text">45sp</dimen>
+    <dimen name="display_1_text">35sp</dimen>
+    <dimen name="display_3_text">56sp</dimen>
+    <dimen name="display_4_text">112sp</dimen>
+    <dimen name="subheading_text">16sp</dimen>
+    <dimen name="action_bar_title_text">20sp</dimen>
+
+    <!-- Vertical Spacing -->
+    <dimen name="list_spacing">72dp</dimen>
+    <dimen name="status_spacing">24dp</dimen>
+    <dimen name="divider_spacing">@dimen/dp_0_8</dimen>
+    <dimen name="toolbar_spacing">56dp</dimen>
+    <dimen name="subtitle_spacing">48dp</dimen>
+
+    <!-- Horizontal Spacing -->
+    <dimen name="app_content_spacing">72dp</dimen>
+
+    <!-- Icon Spacing -->
+    <dimen name="app_icon_size">42dp</dimen>
+    <dimen name="inline_app_icon_size">24dp</dimen>
+    <dimen name="avatar_icon_size">40dp</dimen>
+
+    <dimen name="button_container_padding">16dp</dimen>
+    <dimen name="dp_2_42dp">16dp</dimen>
+</resources>

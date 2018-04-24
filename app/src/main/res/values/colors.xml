@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8097bb</color>
+    <!-- Navigation header  Color-->
+    <color name="colorPrimaryDark">#3c4553</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentLight">#f4f4f4</color>
+    <color name="app_background">#daecf9</color>
+    <color name="colorPrimaryLight">#2a6bac</color>
+    <color name="spec_b">#320cd7</color>
+    <color name="spec_light_b">#005f88</color>
+    <color name="spec_r">#d6111b</color>
+    <color name="spec_w">#ffffff</color>
+    <color name="spec_g">#555759</color>
+    <color name="spec_dep_time">#5b6a80</color>
+    <color name="spec_dep_disabled">#9ea3a9</color>
+
+    <!-- Base Colors -->
+    <color name="primaryColor">#ffffff</color>
+    <color name="primaryLightColor">#ffffff</color>
+    <color name="primaryDarkColor">#3F51B5</color>
+    <color name="baseTextColor">#242424</color>
+
+    <!-- Application Information Colors -->
+    <color name="colorDanger">#ea4335</color>
+    <color name="colorInfo">#4285f4</color>
+    <color name="colorSuccess">#43a047</color>
+    <color name="colorWarning">#fbbc05</color>
+    <color name="colorText">#000000</color>
+    <color name="colorDefault">#3F51B5</color>
+    <!-- Main Colors -->
+    <!-- Navigation header  Color-->
+    <color name="secondaryColor">#ffffff</color>
+    <color name="secondaryLightColor">#65bcea</color>
+    <color name="secondaryDarkColor">#3c4553</color>
+    <color name="primaryTextColor">#268bb7</color>
+    <color name="secondaryTextColor">#ffffff</color>
+
+    <!-- Accent Colors -->
+    <color name="accentColor">#320cd7</color>
+    <color name="welcomeBackground">#303F6C</color>
+    <color name="accentLightColor">#8a73ef</color>
+    <color name="accentDarkColor">#352384</color>
+    <color name="accentTextColor">@color/primaryColor</color>
+
+    <!-- Mode Colors -->
+    <color name="uberPrimary">#1fbad6</color>
+    <color name="uberSecondary">#09091a</color>
+    <color name="lyftPrimary">#ff00bf</color>
+    <color name="lyftSecondary">#352384</color>
+    <color name="cotaPrimary">#002A78</color>
+    <color name="cotaSecondary">#051F4F</color>
+    <color name="busPrimary">#000b86</color>
+    <color name="walkPrimary">#00d23c</color>
+
+    <!-- Notification Colors -->
+    <color name="error">#D0021B</color>
+    <color name="success">#7ED321</color>
+    <color name="warning">#F8E71C</color>
+    <color name="info">#1896d3</color>
+    <color name = "card_color">#eeeeee</color>
+
+    <!-- Ground Colors -->
+    <color name="i_light_brown">#F9F7F4</color>
+    <color name="l_light_brown">#D1C9C0</color>
+    <color name="m_light_gray">#bdbdbd</color>
+    <color name="m_light_status_bar">#dad9d9</color>
+
+    <!-- Text -->
+    <color name="w_white">#FFFFFF</color>
+    <color name="x_brown">#867363</color>
+    <color name="n_brown">#6B5E51</color>
+
+    <!-- Blues -->
+    <color name="d_blue">#0277bd</color>
+    <color name="e_blue">#1565c0</color>
+    <color name="g_blue">#009cde</color>
+    <color name="l_blue">#ff5a8dc1</color>
+    <color name="b_blue">#85A5E2</color>
+    <color name="departure_blue">#278cb8</color>
+    <color name="font_black">#09091a</color>
+    <color name="font_blue">#395097</color>
+    <color name="font_grey">#aaa</color>
+
+    <!-- Provider Colors -->
+    <!-- Provider Uber Base Colors -->
+    <color name="colorUber">#1fbad6</color>
+    <color name="colorUberDark">#09091a</color>
+    <color name="colorUberLight">#bdbdbd</color>
+    <color name="colorUberAccent">#3f51b5</color>
+
+    <!-- Provider Lyft Colors -->
+    <color name="colorLyft">#ff00bf</color>
+    <color name="colorLyftDark">#333447</color>
+    <color name="colorLyftLight">#f3f3f5</color>
+    <color name="colorLyftAccent">#352384</color>
+
+    <!-- Provider Cota Colors -->
+    <color name="colorCota">#1c2859</color>
+    <color name="colorCotaDark">#af272f</color>
+    <color name="colorCotaLight">#4298b5</color>
+    <color name="colorCotaAccent">#8b9dc3</color>
+
+    <!-- Provider Facebook Colors -->
+    <color name="colorFacebook">#3b5998</color>
+    <color name="colorFacebookDark">#8b9dc3</color>
+    <color name="colorFacebookLight">#dfe3ee</color>
+    <color name="colorFacebookAccent">#dfe3ee</color>
+
+</resources>

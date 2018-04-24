@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/address_suggestion_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/component_search_bar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/address_suggestion_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:listitem="@layout/list_item_address_suggestion">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/no_results_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_1_6"
+            android:fontFamily="sans-serif-condensed"
+            android:lineSpacingExtra="24sp"
+            android:padding="@dimen/dp_0_8"
+            android:text="No Results Founds"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDanger"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteY="511dp" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/address_suggestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/address_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_0_8">
+
+        <ImageView
+            android:id="@+id/history_logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/dp_1_6"
+            android:layout_marginStart="@dimen/dp_1_6"
+            android:layout_marginTop="@dimen/dp_0_8"
+            app:srcCompat="@drawable/ic_location" />
+
+        <LinearLayout
+            android:id="@+id/address_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_content_spacing"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/street_address_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/streetAddressFieldHolder"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/history_logo" />
+
+            <TextView
+                android:id="@+id/additional_detail_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/additionalFieldHolder"
+                android:textAllCaps="true"
+                android:textColor="@color/colorUberLight"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/history_logo"
+                app:layout_constraintTop_toBottomOf="@+id/street_address_field" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</ScrollView>

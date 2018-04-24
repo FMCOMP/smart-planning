@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.users.login.LoginView">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_marginLeft="@dimen/dp_1_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_4_0"
+                android:src="@drawable/ic_arrow_back" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_2_0"
+                android:layout_marginTop="@dimen/dp_2_0"
+                android:src="@drawable/ic_ford_logo" />
+
+            <TextView
+                style="@style/HeadertextStyle"
+                android:text="@string/login_header_text"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/accentTextColor"
+                    android:textColorHighlight="@color/accentTextColor"
+                    android:textColorLink="@color/accentTextColor"
+                    android:textStyle="normal|bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/accentTextColor"
+                    android:textColorLink="@color/accentTextColor" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forget_passcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1_0"
+                android:text="@string/forget_passcode_link_text"
+                android:textAlignment="textEnd"
+                android:textColor="@color/font_grey"
+                 />
+
+            <Button
+                android:id="@+id/btn_log_in"
+                style="@style/BlueButton"
+                android:text="@string/btn_log_In" />
+
+            <TextView
+                android:id="@+id/guest_login_link"
+                style="@style/LinkStyleGrey"
+                android:layout_marginTop="@dimen/dp_1_6"
+                android:text="@string/link_continue_guest"
+                android:textColor="@color/font_grey" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

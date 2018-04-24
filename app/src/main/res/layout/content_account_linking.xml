@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyft="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:uber="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    lyft:layout_constraintBottom_toBottomOf="parent"
+    lyft:layout_constraintStart_toStartOf="parent"
+    tools:context=".app.profile.modules.registration.accounts.AccountLinkingView"
+    tools:showIn="@layout/activity_account_linking">
+
+    <ImageView
+        android:id="@+id/ford_logo"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        lyft:srcCompat="@drawable/ford" />
+
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_0_8"
+        android:singleLine="true"
+        android:text="@string/account_linking_title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/uber_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dp_0_8"
+        android:theme="@android:style/Widget.Material.Light.Button">
+
+        <com.uber.sdk.android.core.auth.LoginButton
+            android:id="@+id/uber_button_white"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="@dimen/dp_1_6"
+            android:text="@string/account_linking_button_title"
+            android:textSize="14sp"
+            android:typeface="normal"
+            lyft:ub__scopes="places|profile|request|all_trips"
+            uber:ub__style="white" />
+
+        <ImageView
+            android:id="@+id/uber_linked_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/uber_button_white"
+            android:padding="@dimen/dp_0_8"
+            android:scaleType="fitEnd"
+            android:visibility="invisible"
+            lyft:srcCompat="@drawable/ic_check_mark" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyft_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1_6"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:fadingEdge="horizontal|vertical"
+        android:focusable="true"
+        android:padding="@dimen/dp_0_8"
+        android:theme="@android:style/Widget.Material.Light.Button">
+
+        <ImageButton
+            android:id="@+id/lyft_button_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:background="@android:color/white"
+            android:contentDescription="@string/account_linking_button_title"
+            android:cropToPadding="false"
+            android:scaleType="fitStart"
+            lyft:srcCompat="@drawable/wordmark_thin_pink"
+            tools:text="@string/account_linking_button_title" />
+
+        <TextView
+            android:id="@+id/lyft_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/lyft_linked_check"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:lineSpacingExtra="24sp"
+            android:padding="@dimen/dp_0_8"
+            android:text="@string/account_linking_button_title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/lyft_linked_check"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:padding="@dimen/dp_0_8"
+            android:visibility="invisible"
+            lyft:srcCompat="@drawable/ic_check_mark" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ola_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1_6"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:focusable="true"
+        android:padding="@dimen/dp_0_8"
+        android:theme="@android:style/Widget.Material.Light.Button">
+
+        <ImageView
+            android:id="@+id/ola_linked_check"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:padding="@dimen/dp_0_8"
+            android:visibility="invisible"
+            lyft:srcCompat="@drawable/ic_check_mark" />
+
+        <ImageButton
+            android:id="@+id/ola_button_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:background="@android:color/white"
+            android:contentDescription="@string/account_linking_button_title"
+            android:cropToPadding="false"
+            android:scaleType="fitStart"
+            lyft:srcCompat="@drawable/ic_price"
+            tools:text="SIGN IN" />
+
+        <TextView
+            android:id="@+id/ola_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/ola_linked_check"
+            android:background="@android:color/transparent"
+            android:gravity="top|center_vertical|center_horizontal|end"
+            android:lineSpacingExtra="24sp"
+            android:padding="@dimen/dp_0_8"
+            android:text="@string/account_linking_button_title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/other_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1_6"
+        android:background="@android:color/white"
+        android:text="Link A Different Account"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1_6"
+        android:background="@color/colorPrimaryDark"
+        android:lineSpacingExtra="24sp"
+        android:paddingLeft="@dimen/dp_1_6"
+        android:paddingRight="@dimen/dp_1_6"
+        android:text="Finish"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/skip_link"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="18sp"
+        android:requiresFadingEdge="none"
+        android:text="I'll Do Later"
+        android:textColor="@color/g_blue"
+        android:textSize="12sp"
+        android:typeface="monospace" />
+
+</LinearLayout>

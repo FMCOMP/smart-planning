@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchbar_component_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.Searchbar">
+
+    <LinearLayout
+        android:id="@+id/searchbar_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <LinearLayout
+            android:id="@+id/searchbar_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/inline_app_icon_size"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_0_8"
+                android:background="@drawable/ic_bullseye"
+                android:padding="@dimen/dp_0_8" />
+
+            <ImageView
+                android:layout_width="@dimen/inline_app_icon_size"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_3_dots"
+                android:padding="@dimen/dp_0_8" />
+
+            <ImageView
+                android:layout_width="@dimen/inline_app_icon_size"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_0_8"
+                android:background="@drawable/ic_location"
+                android:padding="@dimen/dp_0_8" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_bar_form"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp_1_6"
+            android:paddingStart="@dimen/dp_1_6">
+
+            <EditText
+                android:id="@+id/origin_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/locationHolder"
+                android:inputType="textAutoCorrect|textAutoComplete|textPostalAddress"
+                android:lineSpacingExtra="18sp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:theme="@style/Widget.AppCompat.EditText" />
+
+            <EditText
+                android:id="@+id/destination_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/locationHolder"
+                android:inputType="textAutoCorrect|textAutoComplete|textPostalAddress"
+                android:lineSpacingExtra="18sp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:theme="@style/Widget.AppCompat.EditText" /> />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_picker_layout"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_2_0">
+
+            <ImageView
+                android:id="@+id/time_clock"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_marginLeft="@dimen/dp_0_8"
+                android:src="@drawable/ic_access_time"
+                android:onClick="showTimePickerDialog"/>
+
+            <TextView
+                android:id="@+id/time_display_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/timeDisplayText"
+                android:hyphenationFrequency="full"
+                android:lineSpacingExtra="14sp"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:theme="@style/AppTheme.TextAppearance" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

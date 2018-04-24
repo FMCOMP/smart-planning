@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/segment_items_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:scrollIndicators="none">
+
+    <RelativeLayout
+        android:id="@+id/route_segment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_1_6">
+
+        <LinearLayout
+            android:id="@+id/route_icon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_1_6"
+            android:layout_marginStart="@dimen/dp_1_6"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_0_6">
+
+
+            <ImageView
+                android:id="@+id/transit_type_icon"
+                android:layout_width="@dimen/inline_app_icon_size"
+                android:layout_height="@dimen/inline_app_icon_size"
+                android:src="@drawable/ic_bus"
+                app:srcCompat="@drawable/ic_bus" />
+
+            <ImageView
+                android:id="@+id/segment_pathway_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_0_6"
+                android:src="@drawable/ic_blue_icon"
+                app:srcCompat="@drawable/ic_horizontal_dots" />
+
+            <ImageView
+                android:id="@+id/segment_pathway_icon4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_0_6"
+                android:src="@drawable/ic_blue_icon"
+                app:srcCompat="@drawable/ic_horizontal_dots" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trip_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_1_6"
+            android:layout_marginLeft="@dimen/dp_1_6"
+            android:layout_marginRight="@dimen/dp_1_6"
+            android:layout_marginStart="@dimen/app_content_spacing"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/segment_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10sp"
+                android:padding="@dimen/dp_0_6"
+                android:text="Transit Mode"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_0_6">
+
+                <TextView
+                    android:id="@+id/segment_destination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingExtra="14sp"
+                    android:text="Route Name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/segment_bus_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingExtra="12sp"
+                    android:text="Bus # : 456"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_0_6">
+
+                <TextView
+                    android:id="@+id/segment_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingExtra="14sp"
+                    android:text="Station Arrival :"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/segment_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingExtra="14sp"
+                    android:text="Leaves Station : "
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/segment_overview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_0_6">
+
+                <TextView
+                    android:id="@+id/segment_fare"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingExtra="12sp"
+                    android:paddingRight="@dimen/dp_0_6"
+                    android:text="Fare : $2.75"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/segment_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/segment_fare"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/segment_fare"
+                    android:layout_toLeftOf="@+id/segment_direction"
+                    android:layout_toRightOf="@+id/segment_fare"
+                    android:layout_toStartOf="@+id/segment_direction"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingExtra="12sp"
+                    android:paddingRight="@dimen/dp_0_6"
+                    android:text="Travel Time : 10MIN"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/segment_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/segment_distance"
+                    android:layout_alignBottom="@+id/segment_distance"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingExtra="12sp"
+                    android:text="Distance: 6Miles"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:colorForeground">@color/colorPrimaryLight</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryLight</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryLight</item>
+        <item name="android:textColorSecondaryInverse">@color/colorPrimaryLight</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="CotaProviderTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorCota</item>
+        <item name="colorPrimaryDark">@color/colorCota</item>
+        <item name="colorAccent">@color/colorCotaDark</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:colorForeground">@color/colorCotaLight</item>
+        <item name="android:navigationBarColor">@android:color/background_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

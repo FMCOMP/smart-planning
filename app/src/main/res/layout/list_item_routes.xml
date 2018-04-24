@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/route_options"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_0_8">
+
+            <LinearLayout
+                android:id="@+id/card_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_1_6"
+                android:layout_marginLeft="@dimen/dp_0_8"
+                android:layout_marginRight="@dimen/dp_0_8"
+                android:layout_marginTop="@dimen/dp_1_6"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/component_route_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_1_6"
+                    android:layout_marginLeft="@dimen/dp_1_6"
+                    android:layout_marginRight="@dimen/dp_1_6"
+                    android:layout_marginStart="@dimen/dp_1_6" />
+
+                <SeekBar
+                    android:id="@+id/route_breakdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_1_6"
+                    android:layout_marginLeft="@dimen/dp_1_6"
+                    android:layout_marginRight="@dimen/dp_1_6"
+                    android:layout_marginStart="@dimen/dp_1_6"
+                    android:enabled="false"
+                    android:max="1"
+                    android:maxHeight="5dip"
+                    android:minHeight="2dip"
+                    android:paddingBottom="@dimen/dp_0_8"
+                    android:paddingTop="@dimen/dp_0_8"
+                    android:progressDrawable="@color/colorPrimary"
+                    android:progressTint="@color/colorLyftAccent"
+                    android:progressTintMode="src_atop"
+                    android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:thumb="@drawable/ic_bus"
+                    android:tickMark="@drawable/ic_blue_icon" />
+
+                <RelativeLayout
+                    android:id="@+id/route_time_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_1_6"
+                    android:layout_marginLeft="@dimen/dp_1_6"
+                    android:layout_marginRight="@dimen/dp_1_6"
+                    android:layout_marginStart="@dimen/dp_1_6"
+                    android:paddingLeft="@dimen/dp_0_8"
+                    android:paddingRight="@dimen/dp_0_8">
+
+                    <TextView
+                        android:id="@+id/total_bus_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="sans-serif-condensed"
+                        android:lineSpacingExtra="14sp"
+                        android:text="@string/holderTotalTime"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/total_walk_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:lineSpacingExtra="12sp"
+                        android:text="@string/holderWalkTime"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
