@@ -49,7 +49,8 @@ public class DestinationPresenter implements LocationServiceInterface {
         DestinationPresenter presenter = new DestinationPresenter();
         presenter.mActivity = activity;
         presenter.mTrip = trip;
-        presenter.initCoordinates();
+
+        presenter.checkPermissions();
 
         return presenter;
     }
@@ -82,6 +83,8 @@ public class DestinationPresenter implements LocationServiceInterface {
                 requestLocationService();
             }
         }
+
+        initMapFragment();
     }
 
     @Override
@@ -134,7 +137,6 @@ public class DestinationPresenter implements LocationServiceInterface {
     private void initMapFragment(){
         map = new MapEntity(mActivity);
         map.view();
-
     }
 
     public MapEntity getMap() {

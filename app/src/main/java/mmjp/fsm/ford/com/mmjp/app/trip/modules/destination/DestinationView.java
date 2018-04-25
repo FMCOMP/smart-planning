@@ -90,14 +90,13 @@ public class DestinationView extends AppCompatActivity implements DestinationCon
         selectedDate = Calendar.getInstance().getTime();
         destinationEditText.setFocusable(false);
 
-        System.out.println("Create " + map.coordinates());
     }
 
     @Override
     protected void onStart(){
         super.onStart();
-        System.out.println("Start " + map.coordinates());
 
+       presenter = DestinationPresenter.newInstance(this, trip);
     }
 
     @OnClick(R.id.time_clock)
@@ -112,7 +111,6 @@ public class DestinationView extends AppCompatActivity implements DestinationCon
         if (map.coordinates() != null) {
 
             origin.setUserCoordinates(map.coordinates().getLatitude(), map.coordinates().getLongitude());
-            System.out.println("Origin Coordinates " + origin.getUserLatitude());
 
             Intent intent = new Intent(DestinationView.this, OriginView.class);
 
