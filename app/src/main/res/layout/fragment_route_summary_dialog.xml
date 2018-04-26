@@ -13,7 +13,7 @@
         android:id="@+id/route_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context="mmjp.fsm.ford.com.mmjp.app.trip.modules.summary.RouteSummaryDialogFragment">
+        tools:context="planner.mmjp.fsm.ford.com.modules.ford.com.RouteSummaryDialogFragment">
 
         <LinearLayout
             android:id="@+id/route_details_layout"

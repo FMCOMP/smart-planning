@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="mmjp.fsm.ford.com">
+
+    <!-- Allows unlocking your device and activating its screen so UI tests can succeed -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- Allows for storing and retrieving screenshots -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Allows changing locales -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:name=".MainActivity"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_mmjp"
+        android:label="@string/appName"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_mmjp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".profile.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profile.home.HomeView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profile.login.LoginView"
+            android:theme="@style/AppTheme.WhiteActionBar" />
+        <activity
+            android:name=".profile.forgetpasscode.ForgetPasscodeView"
+            android:theme="@style/AppTheme.WhiteActionBar" />
+        <activity
+            android:name=".profile.splash.AnimActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profile.registration.RegistrationView"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WhiteActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".profile.registration.accounts.AccountLinkingView"
+            android:label="@string/title_activity_route_summary"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".planner.modules.origin.OriginView"
+            android:label="@string/title_plan_trip"
+            android:theme="@style/AppTheme.WhiteActionBar" />
+        <activity
+            android:name=".planner.modules.search.RouteSearchActivity"
+            android:label="@string/title_route_search"
+            android:theme="@style/AppTheme.WhiteActionBar" />
+        <activity
+            android:name=".planner.modules.destination.DestinationView"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="planner.modules.summary.RouteSummaryActivity"
+            android:label="@string/title_activity_route_summary"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="aia-compat-api-min-version"
+            android:value="1" />
+
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="02b38e9789ac4a4aa211340e9bcb00b9" />
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="qXTzTne5UQanvOVHjOQ1" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="DlfrnVzBdjBw5-xq4-2Gfg" />
+
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="gOI+g0QWyyMTnT98N8rbRRUC9tt7Qbz9uILH5OHVZfDNalEyiVhYVPgUipICji2gN/ITvIKetn4yqwSQkPS+Iwt1PJl6vVHNyBJbg0j8ymFiWPA3RSMAng3sqZzVUdSMxnw7b98qIcFieekLpUP91nKN256ibubVu107u4TKCm9kQr7Df3c7YUZB7PBCETifAxUCTWbRkl1VoxHLZBo0xzpEGA+6D4QzZfbCW7m9qqMZ6OiebDhRjNw6vgnCsujH3JpUlNz74F3E2PPIAtZXcfTnAbEyWL+rzEOzr+YYDgALiKAHLufLyeT2Xk+toIxlYsgwyewFaoOJCIMw9dYqMrt0LwQ27GyfaC+bInlN9Y0SJ87xMXiGEEdQ1lbFPlnIqmNXDrgzZMO19isgKUnxQsHBlcywa+8z4Lezdq3s8XYdg1mSAum5UJ579vdR62AQA2EuWpQTrdCc+9DPBUuqgkjygk3d6KaAMa7C4PUWHKu0H3CIjkCQr4OZyzSZ9TaC8Mmp/4CrOBO8/SQGu0LmLNQEw7jHrI6j29I1bdrObtQOLnMrVwuwlJ63dZeRa+j17jHPmp1PqmJrLvZBLw/pLWl2tns/Vly5JzqgdVYVvbaWljbsZsWpg259lYRIeZjHRHoKyQaStpaTdZhG9AC/76xKzNkFXUFptHGlm13lf6k=" />
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:exported="true"
+            android:label="HereMapService"
+            android:process="global.Here.Map.Service.v3">
+            <intent-filter>
+                <action android:name="com.here.android.mpa.service.MapService.v3" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
