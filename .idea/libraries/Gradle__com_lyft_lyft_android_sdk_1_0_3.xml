@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.lyft:lyft-android-sdk-1.0.3">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/lyft-android-sdk-1.0.3.aar/d57477248d49ff392f86a3928ed5029a/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/lyft-android-sdk-1.0.3.aar/d57477248d49ff392f86a3928ed5029a/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/lyft-android-sdk-1.0.3.aar/1e456e2586a8e68d6c52a76dfb8d2158/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/lyft-android-sdk-1.0.3.aar/1e456e2586a8e68d6c52a76dfb8d2158/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

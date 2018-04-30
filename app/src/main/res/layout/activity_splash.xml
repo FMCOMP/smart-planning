@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/splash"
-    tools:context=".app.profile.modules.splash.AnimActivity">
+    tools:context=".profile.splash.AnimActivity">
+
     <LinearLayout
         android:id="@+id/ll_splash"
         android:layout_width="match_parent"
@@ -14,7 +15,6 @@
         android:gravity="center"
         android:orientation="vertical"
         android:layout_marginTop="150dp">
-
 
     </LinearLayout>
 

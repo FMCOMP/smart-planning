@@ -21,38 +21,19 @@
     <string name="title_activity_trip_overview">TRIP OVERVIEW</string>
 
     <!-- Strings related to login -->
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
+
     <string name="error_invalid_name">This Name is too short</string>
     <string name="signin_get_moving">Sign In to \nget Moving.</string>
-    <string name="login_header_text">Please Log In</string>
-    <string name="forget_passcoce_header_text">Forget Passcode</string>
+
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="btn_facebook_text">SIGN IN WITH FACEBOOK</string>
     <string name="btn_google_text">SIGN IN WITH GOOGLE</string>
     <string name="btn_signin_text">Sign In</string>
-    <string name="btn_continue_guest_text">Continue as Guest</string>
-    <string name="or_text">or</string>
-    <string name="forget_passcode_link_text">Forgot Password ?</string>
-    <string name="enter_email_text">Please enter your email</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
-    <string name="home_text">Add Home</string>
-    <string name="work_text">Add Work</string>
-    <string name="favourite_places_text">Add Favorite Places</string>
-    <string name="my_places_text">My Places</string>
-    <string name="departure_date">DEPARTURE DATE</string>
-    <string name="departure_time">DEPARTURE TIME</string>
-
 
     <!-- Strings related to RegisterationPage -->
     <string name="text_or_registeration">OR</string>
-    <string name="agree_terms">I agree with all terms of Service</string>
     <string name="btn_create_account_text">Create an Account</string>
-    <string name="btn_log_In">Log In</string>
-    <string name="btn_sign_Up">Sign Up</string>
-    <string name="btn_reset_password">Reset Password</string>
-    <string name="link_continue_guest">Continue as Guest</string>
     <string name="link_or_text">Or</string>
 
     <!-- Address Suggestion Strings -->
@@ -101,4 +82,175 @@
     <string name="account_linking_title">Link Accounts</string>
     <string name="account_linking_button_title">Link Account</string>
 
+    <!--Tab names-->
+    <string name="price_tab">Price</string>
+    <string name="speed_tab">Speed</string>
+    <string name="connections_tab">Connections</string>
+
+    <!--SSO Tokens-->
+    <string name="facebook_app_id">217013499033367</string>
+    <string name="fb_login_protocol_scheme">fb217013499033367</string>
+    <string name="server_client_id">408074000628-3pccto2dgic9qbbj87lgkbut6rpv79e0.apps.googleusercontent.com</string>
+
+    <!-- Strings related to Login &  RegisterationPage -->
+    <string name="login_header_text">Please Log In</string>
+    <string name="registeration_header_text">Create Account</string>
+    <string name="account_linking_header_text">Link Accounts</string>
+    <string name="forget_passcoce_header_text">Forget Password</string>
+    <string name="enter_passcode_header_text">Enter Passcode</string>
+    <string name="btn_continue_guest_text">Continue as Guest</string>
+    <string name="or_text">or</string>
+    <string name="forget_passcode_link_text">Forgot Password ?</string>
+    <string name="enter_email_text">Please enter your email</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="enter_resend_text">Resend</string>
+    <string name="will_do_this_later">I\'ll Do Later</string>
+    <string name="agree_terms">I agree with all Terms of Service.</string>
+    <string name="btn_log_In">Log In</string>
+    <string name="btn_sign_Up">Sign Up</string>
+    <string name="btn_finish">Finish</string>
+    <string name="btn_link_different_account">Link a Different Account</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_change_password">Change Password</string>
+    <string name="link_continue_guest">Continue as Guest</string>
+    <string name="country_dropdown_text">Country</string>
+    <string name="account_linking_uber_button_title">Link Uber Account</string>
+    <string name="account_linking_lyft_button_title">Link Lyft Account</string>
+    <string name="account_linking_ola_button_title">Link Ola Account</string>
+
+    <!-- Start of Strings related to Profiles & Settings -->
+
+    <!-- Strings related to General Settings -->
+    <string name="accounts_text">Accounts</string>
+    <string name="uber_not_linked_text">Uber - Not Linked</string>
+    <string name="lyft_not_linked_text">Lyft - Not Linked</string>
+    <string name="ola_not_linked_text">Ola - Not Linked</string>
+    <string name="lyft_text">Lyft</string>
+    <string name="Uber_text">Uber</string>
+    <string name="Ola_text">Ola</string>
+    <string name="link_different_account_text">Link a Different Account</string>
+    <string name="home_text">Add Home</string>
+    <string name="work_text">Add Work</string>
+    <string name="favourite_destination_text">Add a Favorite Destination</string>
+    <string name="favorites_text">Favorites</string>
+    <string name="accessibility_text">Accessibility</string>
+    <string name="accessibility_needs_text">Accessibility Needs</string>
+    <string name="journey_preference">Journey Preference</string>
+    <string name="preference_text">Preference</string>
+    <string name="language_text">Language</string>
+    <string name="language_settings_text">Language Settings</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="notifications_text">Notifications</string>
+    <string name="push_notifications_text">Push Notifications</string>
+    <string name="email_notifications_text">Email Notifications</string>
+    <string name="setting_header">Settings</string>
+    <string name="pref_setting_customize">Customize</string>
+    <string name="app_language_pref_key" translatable="false">app_language_pref_key</string>
+    <string name="pref_language_label">Language</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string-array name="pref_language_titles">
+        <item>English</item>
+        <item>हिन्दी</item>
+        <item>मराठी</item>
+    </string-array>
+    <string-array name="pref_language_values">
+        <item>en</item>
+        <item>hi</item>
+        <item>mr</item>
+    </string-array>
+
+    <!-- Strings related to FAQ -->
+    <string name="provide_your_feedback">Provide Your Feedback</string>
+    <string name="rate_experience">How would you rate your experience using MMJP?</string>
+    <string name="write_feedback">Write Feedback</string>
+    <string name="improved_text">What could be improved?</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="give_feedback">Give Feedback</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_header_trip_planner">Trip Planner</string>
+    <string name="pref_header_trip_history">Trip History</string>
+    <string name="pref_header_settings">Settings</string>
+    <string name="pref_header_feedback">Feedback</string>
+    <string name="pref_header_faq">FAQ</string>
+
+    <!-- End of Strings related to Profiles & Settings -->
+
+    <!-- Strings related to Date Picker -->
+    <string name="departure_date">DEPARTURE DATE</string>
+    <string name="departure_time">DEPARTURE TIME</string>
+
+    <!--Strings related to  Origin -->
+    <string name="origin_location">Current Location</string>
+    <string name="location_service_header">Enable Location Service</string>
+    <string name="location_service_enabled">Location Services Enabled</string>
+    <string name="location_service_disabled">Location Services Disabled</string>
+    <string name="location_service_message">For better location accuracy, please enable location services. Would you like to enable your location services now?</string>
+
+    <!-- Start Trip Overview  & Plan your Trip Strings-->
+    <string name="segment_from">From (B) : Cota Bus Station Route 1 </string>
+    <string name="segment_to">To (C) : Union State </string>
+    <string name="segment_details">Details</string>
+    <string name="segment_bus_number">Bus No : 12B   </string>
+    <string name="segment_direction">Direction : Detroid</string>
+    <string name="segment_distance">20 Min , 10 Stops </string>
+    <string name="walk_min">&#160;mins walk</string>
+    <string name="bus_min_text">&#160;mins on bus</string>
+    <string name="min_on_text">&#160;mins on&#160;</string>
+    <string name="min_text">&#160;mins&#160;</string>
+    <string name="dollar_symbol">$&#160;</string>
+    <string name="rupee_symol">₹&#160;</string>
+    <string name="total_trip_time_text">Total trip time</string>
+    <string name="estimated_text">Estimated</string>
+    <string name="requets_lyft">Request Lyft</string>
+    <string name="request_uber">Request Uber</string>
+    <string name="request_ola">Request Ola</string>
+
+    <!-- End Trip Overview  & Plan your Trip Strings-->
+
+    <!--Start of Error validaitons -->
+
+    <!--Error Validations for Login -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_enter_passcode">Please Enter the Passcode</string>
+    <string name="error_invalid_password">This password is invalid</string>
+    <string name="first_name_required">First Name is required</string>
+    <string name="last_name_required">Last Name is required</string>
+    <string name="email_required">email is required</string>
+    <string name="invalid_email">Invalid Email Address</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="confirm_password_required">Confirm password is required</string>
+    <string name="password_mismatch">Passwords Doesn\'t match</string>
+    <string name="logout_header_message">Sign out?</string>
+    <string name="logout_toast">Logged out of MMJP</string>
+    <string name="logout_message">Are you sure you want to sign out?</string>
+    <string name="enter_passcode">Please Enter the passcode we sent you</string>
+    <string name="invalid_phone_number">This Phone number is invalid</string>
+
+    <!--Error for  Password rules-->
+    <string name="your_password">Your Password:</string>
+    <string name="upper_lower_rule">- must include both upper and lower case characters</string>
+    <string name="number_rule">- must include at least one number</string>
+    <string name="text_size_rule">- must be between 6 and 15 characters long</string>
+    <string name="corr_upper_lower_rule">\u2713 must include both upper and lower case characters</string>
+    <string name="corr_number_rule">\u2713 must include at least one number</string>
+    <string name="corr_text_size_rule">\u2713 must be between 6 and 15 characters long</string>
+    <string name="wrong_upper_lower_rule">\u2718 must include both upper and lower case characters</string>
+    <string name="wrong_number_rule">\u2718 must include at least one number</string>
+    <string name="wrong_text_size_rule">\u2718 must be between 6 and 15 characters long</string>
+
+    <!--Error for Plan Your Trip-->
+    <string name="error_enter_origin_destination_same">Origin and Destination address cant be  same.</string>
+    <string name="no_address_found">No Valid Address Found.</string>
+
+    <!--Error for Trip Options-->
+    <string name="no_route_options">No Results Found.</string>
+
+    <!--End of Error validaitons -->
+
+    <string name="com.appsee.apikey" translatable="false">e35e3fe3cab244c5b0f9bbb2ab6cbe01</string>
+    <string name="com.optimizely.api_key" translatable="false">0903d3e5de97870dae85f3011844f7838945a279bace11cd47ff6d3bd311cacb:Y0kqwzMZo</string>
 </resources>

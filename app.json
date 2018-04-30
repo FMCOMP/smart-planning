@@ -1,0 +1,16 @@
+{
+  "name": "smart-planning",
+  "description": "FSM Ford Journey Planner",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}

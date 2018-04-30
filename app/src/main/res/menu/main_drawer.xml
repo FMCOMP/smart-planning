@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_layout"
+    tools:showIn="navigation_view" android:layout_height="match_parent" >
+
+    <group
+        android:id="@+id/group_trip_planner"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trip_planner"
+            android:icon="@drawable/ic_location"
+            android:title="@string/pref_header_trip_planner"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group_trip_history"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trip_history"
+            android:icon="@drawable/ic_history_icon"
+            android:title="@string/pref_header_trip_history"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group_settings"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/pref_header_settings" />
+    </group>
+
+    <group
+        android:id="@+id/group_feedback"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_help_icon"
+            android:title="@string/pref_header_feedback" />
+    </group>
+
+    <group
+        android:id="@+id/group_faq"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/pref_header_faq" />
+    </group>
+</menu>

@@ -214,5 +214,27 @@
         <item name="android:textColor">@color/primaryColor</item>
     </style>
 
+    <style name="AppTheme"/>
+
+    <style name="Card" parent="CardView.Light">
+        <!-- Layout -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!-- Margins around the outside of a card -->
+        <item name="android:layout_marginBottom">@dimen/card_vertical_margin</item>
+        <item name="android:layout_marginTop">@dimen/card_vertical_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/card_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/card_horizontal_margin</item>
+
+        <!-- Padding around the inside of a card -->
+        <!--<item name="contentPaddingTop">@dimen/card_inner_vertical_padding</item>-->
+        <!--<item name="contentPaddingBottom">@dimen/card_inner_vertical_padding</item>-->
+        <item name="contentPaddingTop">0dp</item>
+        <item name="contentPaddingBottom">0dp</item>
+
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+    </style>
 
 </resources>

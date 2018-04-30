@@ -1,0 +1,2 @@
+json_key_file "/path/to/your/downloaded/key.json"
+package_name("mmjp.fsm.ford.com.mmjp") # e.g. com.krausefx.app
