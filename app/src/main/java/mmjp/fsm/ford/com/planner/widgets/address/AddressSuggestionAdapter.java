@@ -1,5 +1,7 @@
 package mmjp.fsm.ford.com.planner.widgets.address;
 
+import android.annotation.SuppressLint;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -27,7 +29,6 @@ import mmjp.fsm.ford.com.planner.widgets.address.services.AddressSuggestionModel
 
 
 public class AddressSuggestionAdapter extends RecyclerView.Adapter<AddressSuggestionAdapter.ViewHolder> {
-    private View view;
     private TextView mField;
     private Location mLocation;
     private AddressSuggestionModel mModel;
@@ -41,24 +42,26 @@ public class AddressSuggestionAdapter extends RecyclerView.Adapter<AddressSugges
         suggestions  = addressSuggestion;
     }
 
+    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        view = inflater.inflate(R.layout.list_item_address_suggestion, parent, false);
-        ViewHolder viewHolder = new ViewHolder(view);
+        View view = inflater.inflate(R.layout.list_item_address_suggestion, parent, false);
 
-        return viewHolder;
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, @SuppressLint("RecyclerView") int position) {
+        position = viewHolder.getAdapterPosition();
         viewHolder.additionalAddressLabel.setText(suggestions.get(position).getCity());
         viewHolder.streetAddressLabel.setText(suggestions.get(position).getLabel());
 
+        final int finalPosition = position;
         viewHolder.addressSuggestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                selectedSuggestion = suggestions.get(position);
+                selectedSuggestion = suggestions.get(finalPosition);
                 mField.setText(selectedSuggestion.getFullAddress());
                 fetchGeoCode(selectedSuggestion.locationId);
             }

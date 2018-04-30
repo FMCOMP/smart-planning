@@ -251,4 +251,6 @@
 
     <!--End of Error validaitons -->
 
+    <string name="com.appsee.apikey" translatable="false">e35e3fe3cab244c5b0f9bbb2ab6cbe01</string>
+    <string name="com.optimizely.api_key" translatable="false">0903d3e5de97870dae85f3011844f7838945a279bace11cd47ff6d3bd311cacb:Y0kqwzMZo</string>
 </resources>

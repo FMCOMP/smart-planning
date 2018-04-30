@@ -1,7 +1,9 @@
 package mmjp.fsm.ford.com.planner.modules.search.adapters;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialogFragment;
 import android.support.v7.widget.RecyclerView;
@@ -23,7 +25,7 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.View
 
     private Activity mActivity;
     private ArrayList<Route> mList;
-    private BottomSheetBehavior sheetBehavior;
+    private BottomSheetBehavior<View> sheetBehavior;
     private BottomSheetDialogFragment mBottomSheet;
 
     public RouteListAdapter(Activity activity, ArrayList<?> list){
@@ -36,6 +38,7 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.View
         return mList.size();
     }
 
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
@@ -46,10 +49,12 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, @SuppressLint("RecyclerView") int position) {
+
         //set the holder with needed values from the MODEL car like below and delete the below line
         String walkAvgDistance = getRouteDistance(mList.get(position).getRouteAvgWalkDistance().getTransitDistance(), mList.get(position).getRouteAvgWalkDistance().getTransitUnitMeasurement());
 
+        final int finalPosition = viewHolder.getAdapterPosition();
         viewHolder.walkAvgDistance.setText("( " + walkAvgDistance + " min avg walk )");
         viewHolder.routeBusDuration.setText(mList.get(position).getRouteDuration() + "MIN");
         viewHolder.arrivalTimeText.setText("ETA " + mList.get(position).getRouteArrivalTime());
@@ -59,7 +64,7 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.View
         viewHolder.infoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onRouteSelection(position);
+                onRouteSelection(finalPosition);
             }
         });
     }

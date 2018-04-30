@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: HERE-sdk:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/HERE-sdk.aar/dd9fe2e119966a8e5af9f97016f6952c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/HERE-sdk.aar/dd9fe2e119966a8e5af9f97016f6952c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/HERE-sdk.aar/aa15ccd1c898422aa2a0d85eb19d035c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/HERE-sdk.aar/aa15ccd1c898422aa2a0d85eb19d035c/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/app/libs/HERE-sdk-javadoc.jar!/" />

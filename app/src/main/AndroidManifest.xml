@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:name=".MainActivity"
@@ -25,13 +26,14 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
         <activity
             android:name=".profile.home.HomeView"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".profile.login.LoginView"
             android:theme="@style/AppTheme.WhiteActionBar" />
@@ -63,11 +65,11 @@
         <activity
             android:name=".planner.modules.destination.DestinationView"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.WhiteActionBar"/>
         <activity
             android:name="planner.modules.summary.RouteSummaryActivity"
             android:label="@string/title_activity_route_summary"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.WhiteActionBar" />
 
         <meta-data
             android:name="aia-compat-api-min-version"
@@ -87,6 +89,10 @@
         <meta-data
             android:name="com.here.android.maps.license.key"
             android:value="gOI+g0QWyyMTnT98N8rbRRUC9tt7Qbz9uILH5OHVZfDNalEyiVhYVPgUipICji2gN/ITvIKetn4yqwSQkPS+Iwt1PJl6vVHNyBJbg0j8ymFiWPA3RSMAng3sqZzVUdSMxnw7b98qIcFieekLpUP91nKN256ibubVu107u4TKCm9kQr7Df3c7YUZB7PBCETifAxUCTWbRkl1VoxHLZBo0xzpEGA+6D4QzZfbCW7m9qqMZ6OiebDhRjNw6vgnCsujH3JpUlNz74F3E2PPIAtZXcfTnAbEyWL+rzEOzr+YYDgALiKAHLufLyeT2Xk+toIxlYsgwyewFaoOJCIMw9dYqMrt0LwQ27GyfaC+bInlN9Y0SJ87xMXiGEEdQ1lbFPlnIqmNXDrgzZMO19isgKUnxQsHBlcywa+8z4Lezdq3s8XYdg1mSAum5UJ579vdR62AQA2EuWpQTrdCc+9DPBUuqgkjygk3d6KaAMa7C4PUWHKu0H3CIjkCQr4OZyzSZ9TaC8Mmp/4CrOBO8/SQGu0LmLNQEw7jHrI6j29I1bdrObtQOLnMrVwuwlJ63dZeRa+j17jHPmp1PqmJrLvZBLw/pLWl2tns/Vly5JzqgdVYVvbaWljbsZsWpg259lYRIeZjHRHoKyQaStpaTdZhG9AC/76xKzNkFXUFptHGlm13lf6k=" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a81ee396c16821d6e77fcbbb067a7ce22221b469" />
 
         <service
             android:name="com.here.android.mpa.service.MapService"

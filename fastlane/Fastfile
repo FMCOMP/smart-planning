@@ -22,7 +22,7 @@ platform :android do
     end
 
     desc "Deploy a new testing version to HockeyApp"
-    lane: stage do
+    lane:stage do
         gradle(task: "assemble", properties: gradle_properties)
 
         # build the release variant
@@ -31,13 +31,13 @@ platform :android do
         # upload to HockeyApp
         hockey( api_token: "YOUR_API_TOKEN" )
 
-        # slack(
-        #   slack_url: "https://hooks.slack.com/services/IDS"
-        # )
+        slack(
+          slack_url: "https://hooks.slack.com/services/IDS"
+        )
     end
 
     desc "Deploy a new Google Play Store"
-    lane :beta do
+    lane:beta do
       # build the release variant
 
       # upload to Google Play
@@ -48,27 +48,27 @@ platform :android do
     end
 
     desc "Release Application to App Store"
-    lane: release do
+    lane:release do
         supply(apk_paths: ["app/build/outputs/apk/app-release.apk"])
     end
 
     desc "Build Application"
-    lane: build do
+    lane:build do
         gradle(task: "assemble", build_type: "", properties: gradle_properties)
     end
 
     desc "Upload signed application release"
-    lane: archive do
+    lane:archive do
 
     end
 
     desc "Sign Application"
-    lane: sign do
+    lane:sign do
 
     end
 
     desc "Upload Application Source COde"
-    lane: upload do
+    lane:upload do
         create_pull_request(
             head: "development",
             base: "deployment",
@@ -81,7 +81,7 @@ platform :android do
     end
 
     desc "Deploy App to Google Play"
-    lane: playstore do
+    lane:playstore do
         upload_to_play_store # Uploads the APK built in the gradle step above
 
         # Generate the changelog based on commit messages since your last tag
@@ -89,7 +89,7 @@ platform :android do
 
     end
 
-    lane :bump_version_code do
+    lane:bump_version_code do
         path = '../android/app/build.gradle'
         re = /versionCode\s+(\d+)/
 

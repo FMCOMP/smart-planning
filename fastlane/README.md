@@ -16,21 +16,51 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## Android
-### android test
+### android stage
 ```
-fastlane android test
+fastlane android stage
 ```
-Runs all the tests
+Deploy a new testing version to HockeyApp
 ### android beta
 ```
 fastlane android beta
 ```
-Submit a new Beta Build to Crashlytics Beta
-### android deploy
+Deploy a new Google Play Store
+### android release
 ```
-fastlane android deploy
+fastlane android release
 ```
-Deploy a new version to the Google Play
+Release Application to App Store
+### android build
+```
+fastlane android build
+```
+Build Application
+### android archive
+```
+fastlane android archive
+```
+Upload signed application release
+### android sign
+```
+fastlane android sign
+```
+Sign Application
+### android upload
+```
+fastlane android upload
+```
+Upload Application Source COde
+### android playstore
+```
+fastlane android playstore
+```
+Deploy App to Google Play
+### android bump_version_code
+```
+fastlane android bump_version_code
+```
+
 
 ----
 
