@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Application Strings-->
+    <string name="appName">MMJP</string>
+    <string name="mainToolbarTitle">Multi-Modal Journey Planner</string>
+
+    <!-- Search Bar Strings -->
+    <string name="timeDisplayText">10:00AM</string>
+    <string name="locationHolder">Enter Location</string>
+    <string name="originFieldValue">Current Location</string>
+    <string name="destinationFieldHolder">Enter Destination</string>
+
+    <!-- Strings related to Header Text -->
+    <string name="title_activity_home">WHERE TO?</string>
+    <string name="title_trip_options">TRIP OPTIONS</string>
+    <string name="title_route_search">TRIP OPTIONS</string>
+    <string name="title_plan_trip">PLAN YOUR TRIP</string>
+    <string name="title_activity_settings">SETTINGS</string>
+    <string name="title_activity_register">REGISTER</string>
+    <string name="title_activity_trip_overview">TRIP OVERVIEW</string>
+
+    <!-- Strings related to login -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_name">This Name is too short</string>
+    <string name="signin_get_moving">Sign In to \nget Moving.</string>
+    <string name="login_header_text">Please Log In</string>
+    <string name="forget_passcoce_header_text">Forget Passcode</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="btn_facebook_text">SIGN IN WITH FACEBOOK</string>
+    <string name="btn_google_text">SIGN IN WITH GOOGLE</string>
+    <string name="btn_signin_text">Sign In</string>
+    <string name="btn_continue_guest_text">Continue as Guest</string>
+    <string name="or_text">or</string>
+    <string name="forget_passcode_link_text">Forgot Password ?</string>
+    <string name="enter_email_text">Please enter your email</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="home_text">Add Home</string>
+    <string name="work_text">Add Work</string>
+    <string name="favourite_places_text">Add Favorite Places</string>
+    <string name="my_places_text">My Places</string>
+    <string name="departure_date">DEPARTURE DATE</string>
+    <string name="departure_time">DEPARTURE TIME</string>
+
+
+    <!-- Strings related to RegisterationPage -->
+    <string name="text_or_registeration">OR</string>
+    <string name="agree_terms">I agree with all terms of Service</string>
+    <string name="btn_create_account_text">Create an Account</string>
+    <string name="btn_log_In">Log In</string>
+    <string name="btn_sign_Up">Sign Up</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="link_continue_guest">Continue as Guest</string>
+    <string name="link_or_text">Or</string>
+
+    <!-- Address Suggestion Strings -->
+    <string name="streetAddressFieldHolder">1275 Kinnear Rd</string>
+    <string name="additionalFieldHolder">Columbus, OH, 43212</string>
+
+    <!-- Navigation Strings -->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!--Origin Strings-->
+    <string name="originToolbarTitle">Plan Your Trip</string>
+
+    <!--Destination Strings-->
+    <string name="destinationToolbarTitle">Where To?</string>
+
+    <!--Summary Strings-->
+    <string name="summaryToolbarTitle">Where To?</string>
+
+    <!--Route Option Strings-->
+    <string name="routesToolbarTitle">Trip Planner</string>
+    <string name="departureTimePrefix">Leave At :</string>
+    <string name="arrivalTimePrefix">ETA :</string>
+    <string name="farePrefix">Bus Fare</string>
+    <string name="defaultTransitMode">City Bus Route</string>
+    <string name="holderArrivalTime">ETA : 10:00AM</string>
+    <string name="holderDepartureTimePrefix">Leave At : 10:00AM</string>
+    <string name="holderFareText">Trip Fare : $13.50</string>
+    <string name="holderWalkTime">Walking Distance : 6 MILES</string>
+    <string name="holderTotalTime">Total Travel Time : 6 MIN </string>
+    <string name="title_activity_route_summary">RouteSummaryActivity</string>
+    <string name="title_activity_uber">UberActivity</string>
+
+    <!-- Uber Ride Strings -->
+    <string name="app_name">Login Sample</string>
+    <string name="copy_access_token_to_clipboard">Copy Access Token to Clipboard</string>
+    <string name="clear_access_token">Clear Access Token</string>
+    <string name="user_cancels_message">User cancels login</string>
+    <string name="login_error_message">Error occured during login: %s</string>
+    <string name="custom_login_text">I want to sign in using my Uber app.</string>
+    <string name="authorization_code_message">Received an authorization code:\n %s</string>
+    <string name="greeting">Hello %s!</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://apigtwdev.ford.com/.well-known/assetlinks.json\" }]</string>
+    <string name="title_activity_uber_auth">UberAuthActivity</string>
+    <string name="title_activity_account_linking">AccountLinkingActivity</string>
+    <string name="account_linking_title">Link Accounts</string>
+    <string name="account_linking_button_title">Link Account</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_trip_planner"
+            android:icon="@drawable/ic_access_time"
+            android:title="TRIP PLANNER" />
+        <item
+            android:id="@+id/nav_trip_history"
+            android:icon="@drawable/ic_bullseye"
+            android:title="TRIP HISTORY" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_dots"
+            android:title="HELP" />
+    </group>
+
+</menu>
